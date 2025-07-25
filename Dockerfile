@@ -33,8 +33,8 @@ COPY assets/js/slider.js assets/js/
 
 # Copy images and logos (placeholder command - you should add your actual image files)
 COPY assets/images/*.jpg assets/images/
-COPY assets/images/*.png assets/images/
-COPY assets/logos/*.png assets/logos/
+COPY assets/images/*.jpg assets/images/
+COPY assets/logos/*.jpg assets/logos/
 
 # Expose port 80
 EXPOSE 80
