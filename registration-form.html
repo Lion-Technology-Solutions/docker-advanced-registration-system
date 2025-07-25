@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - LionTech</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="assets/logos/liontech-logo.png" alt="LionTech Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="course-details.html">Courses</a></li>
+                <li><a href="registration-form.html" class="active">Register</a></li>
+                <li><a href="graduation-form.html">Graduation</a></li>
+                <li><a href="contact-form.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="registration-form">
+        <h1>Course Registration</h1>
+        
+        <form id="registrationForm">
+            <div class="form-section">
+                <h2>Personal Information</h2>
+                
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            </div>
+            
+            <div class="form-section">
+                <h2>Course Selection</h2>
+                
+                <div class="form-group">
+                    <label for="course">Select Course</label>
+                    <select id="course" name="course" required>
+                        <option value="">-- Select a course --</option>
+                        <option value="advanced-programming">Advanced Programming</option>
+                        <option value="data-science">Data Science</option>
+                        <option value="cybersecurity">Cybersecurity</option>
+                        <option value="ai-ml">Artificial Intelligence & Machine Learning</option>
+                        <option value="cloud-computing">Cloud Computing</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="startDate">Preferred Start Date</label>
+                    <input type="date" id="startDate" name="startDate" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Study Mode</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="studyMode" value="full-time" required> Full-time</label>
+                        <label><input type="radio" name="studyMode" value="part-time"> Part-time</label>
+                        <label><input type="radio" name="studyMode" value="online"> Online</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-section">
+                <h2>Payment Information</h2>
+                
+                <div class="form-group">
+                    <label for="paymentMethod">Payment Method</label>
+                    <select id="paymentMethod" name="paymentMethod" required>
+                        <option value="">-- Select payment method --</option>
+                        <option value="credit-card">Credit Card</option>
+                        <option value="bank-transfer">Bank Transfer</option>
+                        <option value="installment">Installment Plan</option>
+                        <option value="scholarship">Scholarship</option>
+                    </select>
+                </div>
+                
+                <div id="creditCardFields" class="payment-fields" style="display: none;">
+                    <div class="form-group">
+                        <label for="cardNumber">Card Number</label>
+                        <input type="text" id="cardNumber" name="cardNumber">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="cardExpiry">Expiry Date</label>
+                        <input type="month" id="cardExpiry" name="cardExpiry">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="cardCvv">CVV</label>
+                        <input type="text" id="cardCvv" name="cardCvv" maxlength="3">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group terms">
+                <label>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    I agree to the <a href="#" target="_blank">Terms and Conditions</a>
+                </label>
+            </div>
+            
+            <button type="submit" class="cta-button">Complete Registration</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 LionTech Academy. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
